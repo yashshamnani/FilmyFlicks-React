@@ -7,8 +7,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
-
+ 
+import filmy from "../../assets/filmy-logo.png"
 const Header = () => {
     const [show, setShow] = useState("top");
     const [lastScrollY, setLastScrollY] = useState(0); //smooth scroll
@@ -74,7 +74,7 @@ const Header = () => {
         <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
             <ContentWrapper>
                 <div className="logo" onClick={() => navigate("/")}>
-                    <img src={logo} alt="" />
+                    <img src={filmy} alt="" />
                 </div>
                 <ul className="menuItems">
                     <li
